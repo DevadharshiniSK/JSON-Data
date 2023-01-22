@@ -17,9 +17,9 @@ export class DatatableComponent implements OnInit{
        }
     
 
-        userdata:any; 
+       public userdata:any; 
         
-       Getallusers(){
+       public Getallusers(){
            this.httpClient.get('https://jsonplaceholder.typicode.com/users').subscribe((result:any)=>
            {
             this.userdata=result;
